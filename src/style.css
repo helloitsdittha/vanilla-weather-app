@@ -62,3 +62,7 @@ hr {
   margin: 0 auto;
   text-align: center;
 }
+
+p {
+  text-transform: capitalize;
+}
