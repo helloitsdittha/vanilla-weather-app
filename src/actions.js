@@ -1,3 +1,8 @@
+let apiKey = "4d356f6ca394b39fea0444ff6b8dc572";
+let apiURL = `api.openweathermap.org/data/2.5/weather?q=New York&appid=${apikey}`;
+
+console.log(apiURL);
+
 let weather = {
   jakarta: {
     temp: 19.7,
@@ -20,20 +25,6 @@ let weather = {
     humidity: 20,
   },
 };
-
-let city = prompt("enter your city");
-city = city.toLowerCase();
-if (weather[city] !== undefined) {
-  let temperature = weather[city].temp;
-  let celciustemperature = Math.round(temperature);
-  let farenheittemperature = Math.round((temperature * 9) / 5 + 32);
-  let hum = weather[city].humidity;
-  alert(
-    `It is currently ${celciustemperature} °C ( ${farenheittemperature} °F) in ${city} with a humidity of ${hum} %.`
-  );
-} else {
-  alert(`Sorry, we do not know the weather for this city, try googling`);
-}
 
 let now = new Date();
 console.log(now.getDate());
