@@ -34,3 +34,31 @@ if (weather[city] !== undefined) {
 } else {
   alert(`Sorry, we do not know the weather for this city, try googling`);
 }
+
+let now = new Date();
+console.log(now.getDate());
+
+let h4 = document.querySelector("h4");
+let date = now.getDate();
+let hours = now.getHours();
+let minutes = now.getMinutes();
+let days = ["Sun", "Mon", "Tue", "Wed", "Thurs", "Fri", "Sat"];
+let day = days[now.getDay()];
+
+h4.innerHTML = `${day}, ${date} | ${hours}:${minutes}`;
+
+function search(event) {
+  event.preventDefault();
+  let searchInput = document.querySelector("#search-text-input");
+
+  let h2 = document.querySelector("h2");
+  if (searchInput.value) {
+    h2.innerHTML = `${searchInput.value}`;
+  } else {
+    h2.innerHTML = null;
+    alert("please type a city");
+  }
+}
+let form = document.querySelector("#search-form");
+
+form.addEventListener("submit", search);
