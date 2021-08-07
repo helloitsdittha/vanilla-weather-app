@@ -1,4 +1,4 @@
-let apiKey = "4d356f6ca394b39fea0444ff6b8dc572";
+let apiKey = "bf89812ccb78a69ab50c03bf71e4d1a9";
 let apiURL = `api.openweathermap.org/data/2.5/weather?q=New York&appid=${apikey}`;
 
 console.log(apiURL);
