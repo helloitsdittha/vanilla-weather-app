@@ -1,3 +1,64 @@
-h1 {
-  color: violet;
+.box {
+  background-color: rgb(255, 255, 255);
+  display: block;
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  padding: 15px 15px 15px 15px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 20px rgba(59, 57, 57, 0.3);
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+li {
+  display: inline;
+  text-align: left;
+}
+
+.vertical {
+  border-left: 2px solid #a0a0a0;
+  height: 50px;
+  left: 50%;
+  margin-left: 10px;
+  opacity: 60%;
+}
+
+hr {
+  width: 40%;
+  border: 10px;
+  display: inline-block;
+  background-color: #42bfec;
+}
+
+.button {
+  border-radius: 30px;
+  display: inline-block;
+  color: white;
+  border: 3px #42bfec;
+  background-color: #42bfec;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 10px;
+}
+
+.mb-3 {
+  display: inline-block;
+}
+
+.form-control {
+  background-color: transparent;
+  border: 0px solid;
+  width: 30%;
+}
+
+.images {
+  display: inline;
+  align-content: center;
+  width: 40px;
+}
+
+.credit {
+  font-family: "PT Mono", monospace;
+  margin: 0 auto;
+  text-align: center;
 }
